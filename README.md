@@ -3,7 +3,7 @@
 ###Small Web Browser （小型的网络浏览器，麻雀虽小，但五脏俱全）
 
 
-- <font size=4>刚学习Android时开发的，用于学习，有些代码还比较糙，开发于2014-11</font>
+- <font size=4>开发于2014-11，刚学习Android时开发的，用于学习，有些代码比较糙，现上传到Github开源，以后有时间再同步开发</font>
 
 - <font size=4>之前是eclipse工程配置的，现转为Android Studio工程配置</font>
 
