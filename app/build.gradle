@@ -17,6 +17,18 @@ android {
             minifyEnabled true
             proguardFiles 'proguard-project.txt'
             signingConfig signingConfigs.signconfig //指定签名配置
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            &&'release'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "SmallWeb-release-v${defaultConfig.versionName}.${defaultConfig.versionCode}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
         }
     }
     //23以上使用HttpClient
