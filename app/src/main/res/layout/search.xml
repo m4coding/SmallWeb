@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="7dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="7dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <ImageView 
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baidu48x48"/>
+    <ImageView
+        android:id="@+id/arrowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowdown20x20"/>
+    <!-- android:imeOptions="actionGo"指定软输入法的右下角按键显示的形式 -->
+    <!-- android:inputType="textUri"指定弹出的软输入法的显示方法，比如设置为"phone"则软输入法的显示形式为数字键盘 -->
+    <!-- android:selectAllOnFocus="true"获得焦点时就全部选中文本 -->
+    <!-- android:textCursorDrawable="@null"用来控制光标颜,@null作用是让光标颜色和text color一样 -->
+    <!-- android:background="@null"设置背景去掉边框线 -->
+    <AutoCompleteTextView 
+        android:id="@+id/searchText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:singleLine="true"
+        android:hint="@string/search"
+        android:imeOptions="actionGo"
+        android:inputType="textUri"
+        android:selectAllOnFocus="true"
+        android:paddingBottom="1dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp"
+        android:paddingTop="1dp"
+        android:textCursorDrawable="@null"
+        android:background="@drawable/search_bg"/>
+</LinearLayout>

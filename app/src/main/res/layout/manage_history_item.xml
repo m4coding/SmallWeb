@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 使用好LinearLayout布局结合android:layout_weight="1"属性可以做出很好的对齐效果 -->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/manageHistoryItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/manageL"
+        android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_weight="1">
+	    <TextView 
+	        android:id="@+id/manageHistoryTitleTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxLines="1"
+	        android:paddingLeft="8dp"
+	        android:textStyle="bold"/>
+	    <TextView 
+	        android:id="@+id/manageHistoryUrlTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:maxLines="1"
+	        android:paddingLeft="5dp"/>
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/historyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</LinearLayout>

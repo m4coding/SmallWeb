@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smallweb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <!-- 使用网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 写存储卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--  android:name="com.example.smallweb.MyApplication"指定使用自己定制的Application 
+    便于使用全局变量-->
+    <application
+        android:name="com.example.smallweb.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/LightTheme" >
+        <activity 
+            android:name="com.example.smallweb.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>           
+        </activity>
+        <activity 
+            android:name="com.example.smallweb.SettingActivity"
+            android:label="系统设置">           
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">smallweb</string>
+	<string name="new_tab">新的标签页</string>
+	<string name="search">搜索</string>
+	<string name="suggestion">Search for</string>
+	<string name="default_select">请选择默认的搜索引擎</string>
+	<string name="setting">设置</string>
+	<string name="newTab">标签</string>
+	<string name="back">后退</string>
+	<string name="go">前进</string>
+	<string name="update">刷新</string>
+	
+	
+	<string name="download_pending">正在开始下载…</string>
+	<string name="download_sdcard_busy_dlg_msg">USB 存储设备目前正忙，为确保正常下载此文件请在通知栏中确认关闭 USB 大容量存储。</string>
+	<string name="download_sdcard_busy_dlg_title">USB 存储不可用</string>
+	<string name="download_no_sdcard_dlg_msg">为正常下载此文件需要 USB 存储设备。</string>
+	<string name="download_no_sdcard_dlg_title">未发现 SDCard</string>
+	<string name="action_ok">确认</string>
+	<string name="cannot_download">仅可下载以 \"http\" 或 \"https\" 开头的链接地址</string>
+	<string name="dialog_download">您是否需要下载此文件？</string>
+	<string name="action_download">下载</string>
+	<string name="action_cancel">取消</string>
+
+	<string name="please_open_floating_permission">请打开浮动窗权限，才能正常使用！！</string>
+	
+	
+	
+	
+	
+</resources>

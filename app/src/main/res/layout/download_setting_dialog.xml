@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/DownloadSettingView"
+    android:orientation="vertical"
+    android:paddingLeft="5dp">
+    <LinearLayout 
+        android:id="@+id/defaultDownloadDirectory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@drawable/click_effect"
+        android:layout_marginTop="@dimen/home_layout_magin">
+        <ImageView 
+            android:layout_width="@dimen/home_imageView"
+            android:layout_height="@dimen/home_imageView"
+            android:src="@drawable/download_directory64"
+            android:layout_marginRight="@dimen/home_magin"
+            android:layout_gravity="center"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认"
+            android:textSize="@dimen/home_textView"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>   
+    
+     <View 
+       	android:layout_width="match_parent"
+       	android:layout_height="1dp"
+       	android:background="@android:color/darker_gray"
+       	android:layout_marginTop="10dp"/>        
+     
+      <LinearLayout 
+        android:id="@+id/customDownloadDirectory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:background="@drawable/click_effect"
+        android:layout_marginTop="@dimen/home_layout_magin"
+        android:layout_marginBottom="10dp">
+        <ImageView 
+            android:layout_width="@dimen/home_imageView"
+            android:layout_height="@dimen/home_imageView"
+            android:src="@drawable/download_directory64"
+            android:layout_marginRight="@dimen/home_magin"
+            android:layout_gravity="center"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定制下载目录"
+            android:textSize="@dimen/home_textView"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>       
+    
+</LinearLayout>

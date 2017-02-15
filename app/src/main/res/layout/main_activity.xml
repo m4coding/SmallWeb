@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainRootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--android:indeterminate = false设置属性为不确定；
+    android:indeterminateOnly = false即强制启动（其实这个属性就可以了），设置完这两个属性就可以启用进度条的动画模式
+           ，这时可以看到加载网页时进度条有进度滑动显示  -->
+    <!-- android:maxHeight和android:minHeight分别定制最大高度和最小高度 -->
+    <ProgressBar
+       android:id="@+id/processBar"
+       android:layout_width="match_parent"
+       android:layout_height="2dp"
+       android:indeterminateOnly="false"
+       android:maxHeight="2dp"
+       android:minHeight="2dp"
+       android:max="100"
+       android:progressDrawable="@drawable/progress" />
+    
+    <!-- 左右抽屉是可以分别通过向左划屏和向右划屏呼出 -->
+   <!-- 实现抽屉效果的导航菜单 DrawerLayout是android-support-v4.jar中的，所以使用时需要加上这个包 -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 抽屉没有打开时显示的布局   这里采用了一个FrameLayout，里面什么也没放-->
+        <!-- 注意显示要放在这里，放在DrawerLayout后面是显示不了的 -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<WebView
+		        android:id="@+id/webView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"/>   -->
+        </FrameLayout>
+
+        <!-- 抽屉打开时显示的布局 也即右边的抽屉菜单-->
+        <!-- android:layout_gravity="end"用来标注哪边的抽屉的
+        		start即从左边划出的抽屉，end即从右边划出的抽屉 -->
+        <!-- android:clickable="true"属性挺重要的，不设置的话，点击会透过抽屉界面 -->
+        <LinearLayout
+            android:id="@+id/right_drawer"
+            android:layout_width="@dimen/navigation_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/drawer_background"
+            android:orientation="vertical"
+            android:clickable="true">
+			<RelativeLayout 
+			    android:id="@+id/newTab"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:layout_marginTop="5dp">
+			   <ImageView
+                    android:id="@+id/newTabImageView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical" 
+                    android:src="@drawable/ic_action_plus"/>
+
+                <TextView
+                    android:id="@+id/newTabTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/newTabImageView"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/new_tab"
+                    android:textSize="20sp"/>
+			</RelativeLayout>
+		</LinearLayout>                   
+    </android.support.v4.widget.DrawerLayout>
+    
+ 
+
+</LinearLayout>

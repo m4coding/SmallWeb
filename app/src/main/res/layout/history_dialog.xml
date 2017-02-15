@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 为了能使Button位于listView之下有两种方法：（1）使用RelativeLayout布局，将Button的设置在Layout的底部android:layout_alignParentBottom="true"，然后将listView放置在Button的上方android:layout_above="@id/historyButtonLayout"
+	（2）使用LinearLayout布局，将按照顺序排列好listView和Button，然后将listview设置属性android:layout_weight="1"就可以实现 -->
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+<LinearLayout 
+        android:id="@+id/historyButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_alignParentBottom="true">
+	    <Button 
+	        android:id="@+id/manageHistoryButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	         android:clickable="false"
+	        android:textColor="#ff888888"
+	        android:text="管理"/>
+	    #ff888888 灰色	     
+ 		<Button 
+	        android:id="@+id/deleteHistoryButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:text="删除所选的历史记录"
+	        android:clickable="false"
+	        android:textColor="#ff888888"/>
+     </LinearLayout>
+
+	<ListView 
+        android:id="@+id/historyListView"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_above="@id/historyButtonLayout"/>
+	    android:layout_above="@id/historyButtonLayout" 使用@id而不加+后则需要先将historyButtonLayout定义在前面
+    
+    
+</RelativeLayout> -->
+
+<!-- 第二种方法，感觉这种方法好一点，能够自动拉伸长度 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView 
+        android:id="@+id/historyListView"
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+	<LinearLayout 
+        android:id="@+id/historyButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    <Button 
+	        android:id="@+id/manageHistoryButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	         android:clickable="false"
+	        android:textColor="#ff888888"
+	        android:text="管理"/>
+<!-- 	    #ff888888 灰色 -->	     
+ 		<Button 
+	        android:id="@+id/deleteHistoryButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:text="删除所选的历史记录"
+	        android:clickable="false"
+	        android:textColor="#ff888888"/>
+     </LinearLayout>  
+    
+</LinearLayout>

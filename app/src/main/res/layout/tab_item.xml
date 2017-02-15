@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:layout_marginTop="50dp"发现使用inflater来进行加载后，这个设置就不行了，不知道是不是此时父容器还没决定，所以不能设置成功 -->
+<!-- 代码中设置margin就可以设置成功 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabItem"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <ImageView 
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/web_icon"
+        android:scaleType="fitCenter"/>
+    <TextView 
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabItemText"
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"/>
+    <ImageView 
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cancel"
+        android:id="@+id/tabCancel"
+        android:layout_marginLeft="30dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/click_effect"/>  
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 若使用的是popup_window为gif图片，发现在小米2手机中不能正常显示，所以改为png格式的图片 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/popupwindow_black">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_select"
+        android:textColor="@android:color/white"  
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+	    <ImageView 
+	        android:id="@+id/baidu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/baidu64x64"
+	        android:layout_marginRight="20dp"/>
+	    <ImageView 
+	        android:id="@+id/google"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/google64x64"
+	        android:layout_marginRight="20dp"/>
+	     <ImageView 
+	        android:id="@+id/bing"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/bing64x64"/>  
+     </LinearLayout>
+</LinearLayout>

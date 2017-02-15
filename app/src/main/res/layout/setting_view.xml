@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settingLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+    
+
+    <ImageView 
+        android:id="@+id/floatingImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/smallweb256x256"
+        android:layout_gravity="center"/>    
+      
+    <ImageView 
+        android:id="@+id/settingImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/setting"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:id="@+id/shutdownImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shutdown"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"/>
+    
+    <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/newTabView"
+        android:visibility="gone">
+	    <ImageView	        
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/plus"
+	        android:background="@drawable/click_effect"
+	        android:layout_gravity="center"/>
+	    <ImageView 
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/page128x128"
+	        android:layout_gravity="center"
+	        android:background="@android:color/background_light"
+	        android:visibility="gone"/>
+	    <TextView
+	        android:id="@+id/newTabTextView"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_gravity="center"
+	        android:text="1"
+	        android:textStyle="bold"
+	        android:textColor="@android:color/black"
+	        android:gravity="center"
+	        android:visibility="gone"/>
+    </FrameLayout>
+            
+    <ImageView 
+        android:id="@+id/updateImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/update"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:id="@+id/stopImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/stop"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:id="@+id/backImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:layout_marginRight="12dp"
+        android:visibility="gone"/>
+    
+    <ImageView 
+        android:id="@+id/goImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/forward"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/click_effect"
+        android:visibility="gone"/>
+    
+</LinearLayout>

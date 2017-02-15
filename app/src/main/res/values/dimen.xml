@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_width">200dp</dimen>
+    <dimen name="setting_activity_textSize">30sp</dimen>
+    <dimen name="home_imageView">40dp</dimen>
+    <dimen name="home_textView">20sp</dimen>
+    <dimen name="home_magin">20dp</dimen>
+    <dimen name="home_layout_magin">10dp</dimen>
+</resources>
