@@ -3,7 +3,7 @@
 ###Small Web Browser （小型的网络浏览器，麻雀虽小，但五脏俱全）
 
 
-- <font size=4>开发于2014-11，刚学习Android时开发的，用于学习，有些代码比较糙，现上传到Github开源，以后有时间再同步开发</font>
+- <font size=4>开发于2014-11，已在小米应用商店上线。刚学习Android时开发的，用于学习，有些代码比较糙，现上传到Github开源，以后有时间再同步开发</font>
 
 - <font size=4>之前是eclipse工程配置的，现转为Android Studio工程配置</font>
 
@@ -14,6 +14,8 @@
 ![](http://i.imgur.com/JWemwpN.png)  ![](http://i.imgur.com/LDL48JW.png)  ![](http://i.imgur.com/8LsFavg.png)
 
 ###SmallWeb Apk下载地址
+
+- 小米应用商店下载地址：[http://app.mi.com/details?id=com.example.smallweb&ref=search](http://app.mi.com/details?id=com.example.smallweb&ref=search)
 
 - 蒲公英托管apk下载地址：[https://www.pgyer.com/ft46](https://www.pgyer.com/ft46)
 
